@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>uso de cadenas,prompt y conversiones</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		var nombre= prompt("Escriba su nombre")
+		var nota1= parseInt(prompt("Introduzca la nota"));
+		var nota2= parseFloat(prompt("Introduzca la segunda nota"));//el segundo valor sera tomado como un numero con decimas
+
+
+		if (isNaN(nota1) || isNaN(nota2))
+			alert(nombre.toUpperCase()+ "No se puede" + " calcular su nota por error en las" +" notas");
+		else{
+		var notafinal=/*se puede hacer tanto aqui (en la suma) como arriba*/ /*parseInt*/(nota1) + /*parseInt*/(nota2);
+		console.log("Su nombre es:"+nombre);
+		console.log("nota 1:"+nota1);
+		console.log("nota 2:"+nota2);
+		console.log("su nota final es:" +notafinal)
+			if (notafinal>=80)
+		 	alert("Esta aprobado");
+			else
+			alert("estas reprobado,estudia mas la proxima vez..");
+		}
+	</script>
+</body>
+</html>

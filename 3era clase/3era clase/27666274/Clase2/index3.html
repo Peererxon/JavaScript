@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Clase_2_3</title>
+</head>
+<body>
+	<script>
+		var nombre = prompt("Escriba su nombre:");		
+
+		if(nombre != null && nombre.length != 0){
+			var nota1 = parseInt(prompt("Introduzca la nota 1:"));
+			var nota2 = parseFloat(prompt("Introduzca la nota 2:"));
+			if(isNaN(nota1) || isNaN(nota2))
+				alert(nombre.toUpperCase()+" no se puede calcular su nota por un error en als mismas")
+			else{
+				var notaFinal = nota1 + nota2;
+				console.log("Nota 1: "+nota1);
+				console.log("Nota 2: "+nota2);
+				console.log("Nota final: "+notaFinal);
+
+				if(notaFinal >= 80)
+					alert(nombre.toUpperCase()+" Esta aprobado");
+				else
+					alert(nombre.toUpperCase()+" Esta reprobado");
+			}
+		}
+		else{
+			alert("Error en el nombre");
+		}
+	</script>
+</body>
+</html>

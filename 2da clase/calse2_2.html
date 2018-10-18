@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+<!--Antes del script
+Esta linea se coloco para demostrar que se muestra antes de los alert y como estos bloquean la lectura del resto de la pagina hasta que se resuelva-->
+<script type="text/javascript">
+	var nombre= prompt("Diga su nombre");
+	console.log(nombre);
+	//si el usuario hace click en el boton
+	//cancelar, prompt retorna null
+	//si el usuario hace click en el boton 
+	//aceptar sin escribir nada, prompt retorna
+	//una cadena vacia ("")	
+	if (nombre==null ||nombre=="") 
+		alert("Debe escribir un valor y aceptar");
+	else
+		if (isNaN(nombre))
+		alert("es un nombre");
+		else
+		alert("Es un numero");
+</script>
+<!--despues del script lo mismo, pero despues (se observa que en google chrome no funciona esto debidamente,ya que carga todo de una vez-->
+</body>
+</html>

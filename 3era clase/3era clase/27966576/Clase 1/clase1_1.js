@@ -1,0 +1,1 @@
+console.log(x);var x;console.log(x);x=1000;console.log(x);x++;console.log(x);

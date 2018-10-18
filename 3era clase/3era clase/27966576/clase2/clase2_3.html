@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CLASE 2</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var nombre=prompt("¿Cual es tu nombre?");
+		var nota1 =parseInt(prompt("Introduzca la nota 1: "));
+		var nota2 =parseInt(prompt("Introduzca la nota 2: "));
+		
+		if (isNaN(nota1) || isNaN(nota2))
+			alert(nombre.toUpperCase()+" No se puede calcular su nota debido a que no introdujo correctamente su nota.")
+		
+		else{
+			var notafinal=(nota1+nota2)/2;
+
+			alert("Nombre: "+nombre.toUpperCase()+"\nNota 1: "+(nota1)+"\nNota 2: "+(nota2)+"\nNota final: "+(notafinal))
+
+			if (notafinal>=80){
+				alert("Aprobado");
+			}
+			else 
+				alert("Reprobado");
+		}
+
+	</script>
+</body>
+</html>

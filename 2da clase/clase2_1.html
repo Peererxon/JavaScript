@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	var notaexamen= 30+Math.random()*70;
+	var notadesafio= 30+Math.random()*70;
+
+	console.log("nota examen: "+notaexamen.toFixed(0));
+	console.log("Nota desafios: "+notadesafio.toFixed(0));
+
+	if (notaexamen >=80){
+		console.log("Aprobo el examen ");
+		if (notaexamen>=90)
+			console.log("Felicitaciones");
+	}else
+		console.log("Reprobo el examen");
+
+	if (notadesafio >=80){
+		console.log("Aprobo los desafios ");
+		if (notadesafio>=90)
+			console.log("Felicitaciones");
+	}else
+		console.log("Reprobo los desafios");
+
+	if (notadesafio>=80 && notaexamen>=80) 
+		console.log("Tienes el certificado de conocimientos");
+	else
+		console.log("No aprobaste el nivel del curso");
+
+	//var sexo=confirm ("Es hombre ?");
+	//if (sexo)
+		//alert "es hombre";
+	//else
+		//alert"es mujer";
+
+</script>
+</body>
+</html>

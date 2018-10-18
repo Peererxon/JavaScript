@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Clase2_1</title>
+</head>
+<body>
+	<script>
+		var notaExamen = 30+Math.random()*70;
+		var notaDesaio = 30+Math.random()*70;
+
+		console.log("Nota examen: "+notaExamen.toFixed(0));
+		console.log("Nota desafios: "+notaDesaio.toFixed(0));
+
+		if (notaExamen >= 80){
+			console.log("Aprobó el examen");
+			if (notaExamen >= 90)
+				console.log("Felicitaciones!");
+		}
+		else
+			console.log("Reprobó el examen");
+
+		if (notaDesaio >= 80)
+			console.log("Aprobó los desafios");
+		else
+			console.log("Reprobó los desafios");
+
+		if (notaExamen >= 80 && notaDesaio >= 80)
+			console.log("Aprobó el nivel del curso");
+		else
+			console.log("Reprobó el nivel del curso");
+	</script>
+</body>
+</html>
