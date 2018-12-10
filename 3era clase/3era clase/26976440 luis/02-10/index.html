@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script>
+		var notaExamen=60+Math.random()*40;
+		var notaDesafio=60+Math.random()*40;
+
+		console.log("Nota Examen:"+notaExamen.toFixed(0));
+		console.log("Nota Desafio:"+notaDesafio.toFixed(0));
+
+		if (notaExamen>=80) {
+			console.log("Pasaste el examen"); 
+			if(notaExamen>=95)
+			console.log("Felicitaciones");	
+		}
+		
+		else
+			console.log("Reprobo el examen");
+
+
+		if (notaDesafio>=80){
+			console.log("Pasaste los desafios");
+			if (notaDesafio>=95)
+				console.log("Felicitaciones");
+		}
+        else
+        	console.log("Reprobo los desafios");
+
+        if(notaExamen>=80 && notaDesafio>=80)
+        	console.log("Aprobo el nivel del curso")
+        else
+        	console.log("Pasa por caja a pagar")
+
+	</script>
+
+</body>
+</html>

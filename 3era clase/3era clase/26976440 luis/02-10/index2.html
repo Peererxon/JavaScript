@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<script>
+		var nombre=prompt("¿Cúal es su identificador de tipo caracter?:")
+		var nota=parseInt(prompt("Introduzca su nota:"))
+		var nota2= parseFloat(prompt("Introduzca su nota2:"))
+		var sexo= confirm("Es hombre?")
+
+		if(sexo)
+			alert("Es un niño");
+		else
+			alert("Es una niña");
+
+		if(isNaN(nota) || isNaN(nota2))
+			alert(nombre.toUpperCase()+"no se puede"+" calcular su nota por un error en las "+ "notas")
+		else{
+		var notafinal=nota + nota2;
+		console.log("nota:"+nota)
+		console.log("nota2:"+nota2)
+		console.log("nota final:"+notafinal)
+		if (notafinal>=80)
+			alert(nombre.toUpperCase()+"Aprobado");
+
+		else 
+			alert(nombre.toUpperCase()+"Reprobado");
+ 	}
+	</script>
+
+</body>
+</html>

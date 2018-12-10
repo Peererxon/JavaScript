@@ -1,0 +1,9 @@
+<!DOCTYPE>
+<html>
+<head>
+    <title>Info</title>
+</head>
+<body>
+    <img src="lagrimas.jpg" width="200px">
+</body>
+</html>

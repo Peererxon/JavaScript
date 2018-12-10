@@ -1,0 +1,20 @@
+<html>
+	<head>
+	
+	</head>
+	<body onload="activar()" onclick="activar()">
+		Practica de SetTimeout
+		<script>
+			var t;
+			function activar(){
+                window.alert("Se hizo click")
+				window.clearTimeout(t);
+				t=window.setTimeout('cerrar()',5000)
+			}
+			function cerrar(){
+				window.alert("Se acabo el tiempo")
+				window.close()
+			}
+		</script>
+	</body>
+</html>

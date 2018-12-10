@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+	<title></title>
+</head>
+<body>
+	Antes del script
+	<script>
+	var nombre= prompt("¿Cúal es tu numero preciosa?:");
+	console.log("nombre:"+nombre)
+    //Si el usuario hace clic en el boton cancelar, prompt retorna null
+    //Si el usuario hace clic en el boton aceptar sin escribir nada, promt retorna una cadena vacía
+	if(nombre==null|| nombre=="")
+		alert("Este chanceo es un formulario");
+	else
+	
+		if (isNaN(nombre))
+			alert("el valor introducido, debe estar compuesto solo por números");
+		else 
+			alert("Es un número, espero y sea el de verdad")
+
+	</script>
+	Luego del script 
+</body>
+</html>

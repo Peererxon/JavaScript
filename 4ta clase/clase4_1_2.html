@@ -1,0 +1,53 @@
+<html>
+	<head>
+		<meta charset="utf-8"/>
+	</head>
+	<body>
+
+        <input 
+			type="button" 
+			onclick="ir()"
+            value="Ir a" />
+
+        <input 
+			type="button" 
+			onclick="info()"
+            value="Informacion" />
+        <input 
+			type="button" 
+			onclick="window.print()" 
+            value="Imprimir" />
+            
+        <input 
+			type="button" 
+            onclick="window.blur()"
+            value="Desenfoque" />
+
+            <input 
+			type="button" 
+            onclick="window.open('http://www.innovationdeveloping.com.ve',500, 300)"
+            value="OPEN" />
+
+            <input 
+			type="button" 
+            onclick="window.open('clase4_3.html',500, 300)"
+            value="set" />
+
+            <input type="button" value="cerrar" onclick="window.close()">
+
+		<script>
+			function info(){
+				alert("Ancho de la pantalla:"+screen.width+
+					  "\nAlto de la pantalla:"+screen.height+
+					  "\nEn línea: "+navigator.onLine+
+					  "\nIdioma del navegador:"+navigator.language+
+					  "\nSistema operativo:"+navigator.platform);
+			}	
+			function ir(){
+				web=prompt("a cuál página desea ir?");
+				if (!(web=="" || web==null))
+					window.location="http://"+web+".com";				
+			}
+		</script>
+	</body>
+</html>
